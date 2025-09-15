@@ -1,0 +1,22 @@
+dataset:
+  root: "/home/23ucs697/COD10K-v3"
+  train: "Train"
+  test: "Test"
+
+training:
+  batch_size: 1
+  num_workers: 4
+  epochs: 10
+  lr: 0.001
+  momentum: 0.9
+  weight_decay: 0.001
+  step_size: 8
+  gamma: 0.1
+
+model:
+  num_classes: 2  # background + object
+
+output:
+  checkpoint_dir: "checkpoints"
+  results_dir: "outputs"
+  save_name: "fasterrcnn_cod10k.pth"
